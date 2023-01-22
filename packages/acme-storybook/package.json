@@ -1,0 +1,35 @@
+{
+  "name": "@acme/storybook",
+  "version": "0.0.1",
+  "repository": "https://github.com/vercel/examples.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "start-storybook -p 6006",
+    "build": "build-storybook --docs",
+    "preview-storybook": "serve storybook-static",
+    "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
+    "clean": "rm -rf .turbo"
+  },
+  "dependencies": {
+    "@acme/design-system": "workspace:*",
+    "@acme/pages": "workspace:*",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@storybook/addon-docs": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/react": "^6.5.13",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^8.26.0",
+    "eslint-config-acme": "workspace:*",
+    "serve": "^14.0.1",
+    "tailwindcss": "^3.2.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8"
+  }
+}
